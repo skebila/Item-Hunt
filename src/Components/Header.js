@@ -3,19 +3,21 @@ import styled from 'styled-components';
 import SearchIcon from '@material-ui/icons/Search';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
+import { Link } from 'react-router-dom';
 
 export class Header extends PureComponent {
     render() {
         return (
             <Container>
-
+                
                 <HeaderLogoDiv>
-
-                    <LogoItemOne>Item</LogoItemOne>
-
-                    <LogoItemTwo>Hunt</LogoItemTwo>
-
+                    <Link to="/">
+                        <LogoItemOne>Item</LogoItemOne>
+                        <LogoItemTwo>Hunt</LogoItemTwo>
+                    </Link>
                 </HeaderLogoDiv>
+                
+                
 
                 <HeaderLocationDiv>
                     <LocationOnIcon />
@@ -52,9 +54,11 @@ export class Header extends PureComponent {
                     </HeaderOption>
 
                     <HeaderCartDiv>
-                        <ShoppingCartIcon />
-                        
-                        <CartCount>4</CartCount>
+                        <Link to="/cart">
+                            <ShoppingCartIcon />
+                            
+                            <CartCount>4</CartCount>
+                        </Link>
                     </HeaderCartDiv>
                 </HeaderNavItems>
 
@@ -76,17 +80,20 @@ const Container = styled.div`
     justify-content: space-between;
 `
 const HeaderLogoDiv = styled.div`
+    a{
+        color: white;
+        text-decoration: none;
+    }
     padding-left: 9px;
     display: flex;
     font-size: 20px;
     font-family: 'Nosifer', cursive;
 `
 const LogoItemOne = styled.span`
-
+    
 `
 const LogoItemTwo = styled.span`
     color: #FEC260;
-    //font-weight: 720;
 `
 const HeaderLocationDiv = styled.div`
     padding-left: 9px;
@@ -143,9 +150,15 @@ const HeaderOption = styled.div`
 
 `
 const HeaderCartDiv = styled.div`
+    a{
+        display: flex;
+        align-items: center;
+        padding-right: 9px;
+        color: white;
+        text-decoration: none;
+    }
     display: flex;
     align-items: center;
-    padding-right: 9px;
 `
 const CartCount = styled.span`
     padding-left: 4px;
