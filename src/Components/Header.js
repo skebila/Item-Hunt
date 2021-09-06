@@ -95,7 +95,7 @@ const HeaderLocationDiv = styled.div`
     
 `
 const OptionRowOne = styled.div`
-    //font-size: 12px;
+    font-size: 12px;
     line-height: 14px;
     height: 14px;
     font-weight: 400;
