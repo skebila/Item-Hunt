@@ -67,8 +67,8 @@ export class Header extends PureComponent {
 export default Header
 
 const Container = styled.div`
-
     background-color: black;
+    font-size: 14px;
     height: 60px;
     color: white;
     display: flex;
@@ -95,9 +95,14 @@ const HeaderLocationDiv = styled.div`
     
 `
 const OptionRowOne = styled.div`
-
+    font-size: 12px;
+    line-height: 14px;
+    height: 14px;
+    font-weight: 400;
 `
 const OptionRowTwo = styled.div`
+    font-size: 14px;
+    line-height: 15px;
     font-weight: 700;
 `
 const HeaderSearchDiv = styled.div`
@@ -113,6 +118,8 @@ const HeaderSearchDiv = styled.div`
     }
 `
 const HeaderSearchInput = styled.input`
+    font-size: 14px;
+    font-weight: 500;
     flex-grow: 1;
     :focus{
         outline: none;
