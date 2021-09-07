@@ -93,7 +93,7 @@ const LogoItemOne = styled.span`
     
 `
 const LogoItemTwo = styled.span`
-    color: #FEC260;
+    color: #5F939A;
 `
 const HeaderLocationDiv = styled.div`
     padding-left: 9px;
@@ -121,7 +121,7 @@ const HeaderSearchDiv = styled.div`
     border-radius: 3px;
     background-color: white;
     :focus-within{
-        box-shadow: 0 0 0 3px #FEC260;
+        box-shadow: 0 0 0 3px #5F939A;
     }
 `
 const HeaderSearchInput = styled.input`
@@ -134,7 +134,7 @@ const HeaderSearchInput = styled.input`
     border: 0;
 `
 const HeaderSearchLogo = styled.div`
-    background-color: #FEC260;
+    background-color: #5F939A;
     display: flex;
     justify-content: center;
     align-items: center;
